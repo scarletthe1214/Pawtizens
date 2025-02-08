@@ -44,9 +44,9 @@ const DailyChecklist = () => {
 
   useEffect(() => {
     // Retrieve learned skills from localStorage
-    const storedData = localStorage.getItem("dogDetails");
+    const storedData = localStorage.getItem("currentDog");
     if (!storedData) {
-      console.error("No dog details found in localStorage.");
+      console.error("No currentDog details found in localStorage.");
       return;
     }
 
