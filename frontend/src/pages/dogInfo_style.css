@@ -1,0 +1,114 @@
+.dogInfoPage {
+  background-color: #fff0f5;
+  background-image: url('/IMG_8171.PNG');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%; 
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-align: center;
+  display: flex;
+  height: 100%;
+}
+
+
+.dogForm {
+  width: 80vw;
+  height: auto;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 3px solid #ffcccb;
+  border-radius: 10px;
+  background-color: #fff5cc;
+  box-shadow: 0 4px 8px rgba(255, 182, 193, 0.3);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dogForm h2 {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  color: #ff69b4;
+}
+
+.dogForm label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #ffa500;
+}
+
+.dogForm input[type="text"],
+.dogForm input[type="date"] {
+  width: 90%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 2px solid #ffcccb;
+  border-radius: 8px;
+  background-color: #fff;
+  font-size: 16px;
+}
+
+.skills-container {
+  border: 2px dashed #ff69b4;
+  padding: 10px;
+  min-height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  background-color: #fff5cc;
+  border-radius: 10px;
+  width: 90%;
+}
+
+.skills-container .skill-item {
+  padding: 5px;
+  border: 2px solid #ff69b4;
+  background-color: #ffd700;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+
+.skill-select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ffcccb;
+  border-radius: 8px;
+  background-color: #fff;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  cursor: pointer;
+}
+
+button[type="submit"],
+button[type="button"] {
+  width: 90%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button[type="submit"] {
+  background-color: #ff69b4;
+  color: white;
+}
+
+button[type="button"] {
+  background-color: #ffd700;
+  color: white;
+}
+
+button[type="submit"]:hover,
+button[type="button"]:hover {
+  opacity: 0.8;
+}
