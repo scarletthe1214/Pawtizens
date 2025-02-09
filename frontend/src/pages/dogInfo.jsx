@@ -12,7 +12,7 @@ function DogInfoForm() {
     age: "",
     breed: "",
     skillslearned: [],
-    targetGKCDate: "",
+    targetCGCDate: "",
   });
 
   const skillsOptions = [
@@ -98,7 +98,7 @@ function DogInfoForm() {
         age: "",
         breed: "",
         skillslearned: [],
-        targetGKCDate: "",
+        targetCGCDate: "",
       });
     }
   };  
@@ -141,8 +141,8 @@ function DogInfoForm() {
             </select>
           </div>
 
-          <label>Target GKC Date:</label>
-          <input type="date" name="targetGKCDate" value={dogData.targetGKCDate} onChange={(e) => setDogData({ ...dogData, targetGKCDate: e.target.value })} required />
+          <label>Target CGC Date:</label>
+          <input type="date" name="targetCGCDate" value={dogData.targetCGCDate} onChange={(e) => setDogData({ ...dogData, targetCGCDate: e.target.value })} required />
           
           <div>
             <button type="submit">Add Pet</button>

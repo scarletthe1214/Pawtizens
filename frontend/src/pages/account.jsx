@@ -47,7 +47,7 @@ const AccountPage = () => {
               ? dog.skillslearned.join(", ")
               : "None"}
           </p>
-          <p><strong>Target Exam Date:</strong> {dog.targetGKCDate || "Not Set"}</p>
+          <p><strong>Target Exam Date:</strong> {dog.targetCGCDate || "Not Set"}</p>
 
         </div>
       ) : (
