@@ -26,14 +26,6 @@ const AccountPage = () => {
     navigate("/");
   };
 
-  const handleSwitchDog = (selectedDogName) => {
-    const newDog = allDogs.find((dog) => dog.name === selectedDogName);
-    if (newDog) {
-      localStorage.setItem("currentDog", JSON.stringify(newDog));
-      setDog(newDog);
-    }
-  };
-
   return (
     <div className="accountPage">
       <nav className="navbar horizontal-navbar">
@@ -57,19 +49,6 @@ const AccountPage = () => {
           </p>
           <p><strong>Target Exam Date:</strong> {dog.targetGKCDate || "Not Set"}</p>
 
-          {/* Dog Switcher */}
-          {allDogs.length > 1 && (
-            <div className="switch-dog">
-              <label>Switch Dog:</label>
-              <select onChange={(e) => handleSwitchDog(e.target.value)} value={dog.name}>
-                {allDogs.map((d) => (
-                  <option key={d.name} value={d.name}>
-                    {d.name}
-                  </option>
-                ))}
-              </select>
-            </div>
-          )}
         </div>
       ) : (
         <p>No dog details found.</p>

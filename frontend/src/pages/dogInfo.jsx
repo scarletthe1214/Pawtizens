@@ -89,16 +89,19 @@ function DogInfoForm() {
   };
 
   const handleReset = () => {
-    setDogData({
-      email: "",
-      password: "",
-      name: "",
-      age: "",
-      breed: "",
-      skillslearned: [],
-      targetGKCDate: "",
-    });
-  };
+    const confirmed = window.confirm("Are you sure you want to reset the form?");
+    if (confirmed) {
+      setDogData({
+        email: "",
+        password: "",
+        name: "",
+        age: "",
+        breed: "",
+        skillslearned: [],
+        targetGKCDate: "",
+      });
+    }
+  };  
 
   return (
     <div className="dogInfoPage">
