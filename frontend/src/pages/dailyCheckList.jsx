@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import "./dailyChecklist_style.css"; // Import the new style
+import "./dailyCheckList_style.css"; // Import the new style
 
 const DailyChecklist = () => {
   const navigate = useNavigate();
