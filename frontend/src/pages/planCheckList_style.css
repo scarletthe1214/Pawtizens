@@ -1,0 +1,132 @@
+.planChecklistPage {
+    background-color: #fff0f5;
+    background-image: url('/IH3A2662-nologo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: flex-start;
+    padding-top: 30px;
+  }
+  
+  /* Header & Navigation */
+  .planChecklistHeader {
+    font-size: 20px; /* Reduced font size */
+    font-weight: bold;
+    color: #ff69b4;
+    margin-bottom: 10px;
+  }
+  
+  .planChecklistNav {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .planChecklistNav a {
+    text-decoration: none;
+    font-size: 14px; /* Smaller font */
+    color: white;
+    background-color: #ff69b4;
+    padding: 6px 12px;
+    border-radius: 6px;
+  }
+  
+  .planChecklistNav a:hover {
+    opacity: 0.8;
+  }
+  
+  /* Skill Container */
+  .skill-container {
+    background-color: #fff5cc;
+    border: 2px solid #ffcccb;
+    border-radius: 8px;
+    width: 70vw; /* Smaller width */
+    max-width: 400px; /* Smaller max width */
+    padding: 8px;
+    margin-bottom: 10px;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .skill-title {
+    font-size: 16px; /* Smaller font */
+    font-weight: bold;
+    color: #ff69b4;
+    cursor: pointer;
+  }
+  
+  .skill-description {
+    font-size: 12px; /* Smaller font */
+    color: #444;
+    margin-top: 4px;
+    display: none;
+  }
+  
+  .skill-container.expanded .skill-description {
+    display: block;
+    animation: fadeIn 0.3s ease-in;
+  }
+  
+  /* Cute Checkboxes */
+  .cute-checkbox {
+    width: 20px; /* Smaller */
+    height: 20px;
+    cursor: pointer;
+    accent-color: #ff69b4;
+    border-radius: 50%;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .cute-checkbox:checked {
+    transform: scale(1.1);
+  }
+  
+  /* Buttons */
+  .planChecklist-buttons {
+    margin-top: 15px;
+    display: flex;
+    gap: 8px;
+  }
+  
+  .planChecklist-buttons button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px; /* Smaller font */
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .planChecklist-buttons .save-btn {
+    background-color: #ff69b4;
+    color: white;
+  }
+  
+  .planChecklist-buttons .back-btn {
+    background-color: #ffd700;
+    color: white;
+  }
+  
+  .planChecklist-buttons button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-5px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

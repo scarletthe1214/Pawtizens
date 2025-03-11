@@ -56,7 +56,7 @@
   transition: 0.3s ease;
 }
 
-.daily-checklist-btn {
+.plan-checklist-btn {
   background-color: #ff69b4;
   color: white;
 }
@@ -100,4 +100,20 @@
 
 .horizontal-navbar button:hover {
   opacity: 0.8;
+}
+
+.find-trainers-btn {
+  background-color: #ffd700;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.find-trainers-btn:hover {
+  background-color: #FFC107; /* Slightly darker yellow on hover */
 }

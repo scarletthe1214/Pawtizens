@@ -1,12 +1,21 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import "./home_style.css";
+import { getImage } from '../client/apiImage';
 
 const Home = () => {
   const navigate = useNavigate();
   const [dogName, setDogName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [logo, setLogo] = useState();
+
+  useEffect(() => {
+    getImage("4.png").then(data => {
+      console.log(data);
+      setLogo(data)
+    });
+  }, [])
 
   // Hash function using SHA-256
   const hashPassword = async (password) => {
@@ -70,7 +79,7 @@ const Home = () => {
   return (
     <div className="homePage">
       <header>
-        <img src="/IMG_8174.PNG" alt="Pawtizens Logo" style={{ width: '100px', height: '100px' }} />
+        <img src={logo} alt="Pawtizens Logo" style={{ width: '100px', height: '100px' }} />
         <h1>Pawtizens</h1>
         <p>
           Welcome to Pawtizens' Home, where every wag and purr finds comfort, joy, and the path to becoming a Good Canine Citizen!
