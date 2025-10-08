@@ -79,7 +79,7 @@ const Home = () => {
   return (
     <div className="homePage">
       <header>
-        <img src={logo} alt="Pawtizens Logo" style={{ width: '100px', height: '100px' }} />
+        {/* <img src={logo} alt="Pawtizens Logo" style={{ width: '100px', height: '100px' }} /> */}
         <h1>Pawtizens</h1>
         <p>
           Welcome to Pawtizens' Home, where every wag and purr finds comfort, joy, and the path to becoming a Good Canine Citizen!
